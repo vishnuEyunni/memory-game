@@ -35,9 +35,9 @@ const server = http.createServer((req, res) => {
             fs.createReadStream(filePath).pipe(res);
         }
         else if (fileExt == '.js') {
-          res.statusCode = 200;
-          res.setHeader('Content-type', 'text/javascript');
-          fs.createReadStream(filePath).pipe(res);
+            res.statusCode = 200;
+            res.setHeader('Content-type', 'text/javascript');
+            fs.createReadStream(filePath).pipe(res);
         }
         else {
             filePath = path.resolve('./public/404.html');
@@ -54,7 +54,8 @@ const server = http.createServer((req, res) => {
     }
 });
 
+var server_port = process.env.PORT || 5000;
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(server_port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${server_port}/`);
 });
