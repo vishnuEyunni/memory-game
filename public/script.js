@@ -63,7 +63,6 @@ function onCardClick(e) {
         matched[1].classList.toggle("show");
       }
       if (matched[0].children[0].className === matched[1].children[0].className) {
-        alert(2)
         count += 2;
       }
       matched.length = [];
