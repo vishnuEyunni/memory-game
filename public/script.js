@@ -52,9 +52,9 @@ function onCardClick(e) {
 
   target.classList.toggle("show");
   target.classList.toggle("open");
-  matched.push(target);
-
   setTimeout(function () {
+    matched.push(target);
+
     if (matched.length === 2) {
       if (matched[0].children[0].className !== matched[1].children[0].className) {
         matched[0].classList.toggle("open");
@@ -81,7 +81,7 @@ function onCardClick(e) {
         count = 0;
       }
     }
-  }, 800)
+  }, 600);
 }
 
 function init() {
