@@ -11,9 +11,9 @@
 
 .card {
   padding: 10px;
-  font-size: 35px;
-  width:70px;
-  height: 70px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
   background-color: coral;
   display: flex;
   align-items: center;
@@ -52,13 +52,11 @@ header {
 
 .show {
   transform: rotateY(-180deg);
-  transition: all .6s ease;
 }
 
 .open {
-  color: white;
-  background-color: black;
-  transition: all .6s ease;
+  color: white !important;
+  background-color: black !important;
 }
 
 .fa.fa-star {
@@ -68,4 +66,44 @@ header {
 
 .yellow {
   color: yellow !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    padding: 10px;
+    font-size: 20px;
+    width: 26px;
+    height: 26px;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    color: coral;
+    margin: 10px;
+    border-radius: 12%;
+    transition: all .6s ease;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .card {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    color: coral;
+    margin: 10px;
+    border-radius: 12%;
+    transition: all .6s ease;
+  }
+}
+
+#steps {
+  margin: 10%;
 }
