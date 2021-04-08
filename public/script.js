@@ -93,6 +93,7 @@ function init() {
 function reset() {
   moves = 0;
   setMoves(moves);
+  matched = [];
   Array.from(arr).forEach((x) => {
     x.classList.remove("open");
     x.classList.remove("show");
