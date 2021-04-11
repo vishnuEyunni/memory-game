@@ -34,12 +34,12 @@ function setMoves(moves) {
 
 function onCardClick(e) {
   var target = e.target;
-  var classList = Array.from(target.classList);
 
   if (target.nodeName !== "LI" && target.nodeName === "I") {
     const parent = target.parentElement;
     target = parent;
   }
+  var classList = Array.from(target.classList);
 
   if (classList.includes("open")) {
     e.preventDefault();
