@@ -88,6 +88,7 @@ function init() {
   Array.from(arr).forEach(x => {
     x.addEventListener('click', onCardClick, { capture: false })
   });
+  shuffle(arr);
 }
 
 function reset() {
